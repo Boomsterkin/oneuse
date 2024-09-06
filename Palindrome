@@ -1,0 +1,16 @@
+r=10
+n=0
+def palindrome(x):
+    return x[::-1]
+while n<=99:
+    d=0
+    n=r
+    while r<=99 or r!=int(palindrome(str(r))):
+        r+=int(palindrome(str(r)))
+        d+=1
+    print("Base Number: "+str(n))
+    print("Result: "+str(r))
+    print("Depth: "+str(d))
+    input()
+    n+=1
+    r=n
